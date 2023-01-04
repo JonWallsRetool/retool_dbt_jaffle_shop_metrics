@@ -11,6 +11,7 @@ with source as (
 renamed as (
 
     select
+        current_timestamp() as _etl_loaded_at,
         id as customer_id,
         first_name,
         last_name

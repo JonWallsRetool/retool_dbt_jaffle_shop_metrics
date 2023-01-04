@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+
+  - name: fresh_jaffles
+    type: dashboard
+    depends_on:
+      - source('retool_jaffle_staging', 'stg_customers')
+      - source('retool_jaffle_staging', 'stg_orders')
+      - source('retool_jaffle_staging', 'stg_payments')
+
+    owner:
+      name: Jon Walls
+      email: jon.walls@retool.com
