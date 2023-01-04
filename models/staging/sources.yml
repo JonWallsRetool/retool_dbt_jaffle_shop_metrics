@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: retool_jaffle_staging
     database: SE_DEMO_DB
-    schema: DBT_JAFFLE_SHOP_METRICS
+    schema: RETOOL_JAFFLE
     freshness:
         warn_after: {count: 2, period: hour}
         error_after: {count: 4, period: hour}
